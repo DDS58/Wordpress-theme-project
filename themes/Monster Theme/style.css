@@ -1,0 +1,525 @@
+/*
+Theme Name: Monster Theme
+Author: David
+Author URI: www.david.com
+Description: Theme ideal for energy drinks
+Tags: no tags
+Version: 1
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&family=Tektur:wght@600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 12px;
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.6em;
+}
+
+a:hover {
+    color: #97cb3d;
+}
+
+body {
+    font-family: 'Tektur', cursive;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    width: 90%;
+}
+
+section {
+    padding: 50px 0;
+}
+
+h1 {
+    font-size: 4.2em;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 3.5em;
+    font-weight: 800;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.greentext,
+span {
+    color: #97cb3d;
+}
+
+.fade {
+    opacity: 70%;
+}
+
+h3 {
+    font-size: 2.5em;
+    font-weight: 700;
+    display: inline;
+}
+
+h4 {
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 1.5em;
+    margin: 10px 0;
+    max-width: 600px;
+    line-height: 1.5em;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+}
+
+header {
+    background-color: black;
+}
+
+.header-flex {
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5em;
+}
+
+#menu-monster-menu {
+    display: flex;
+}
+
+.menu-item {
+    margin: 0 20px;
+}
+
+
+
+/* ul.pages {
+    display: flex;
+    list-style: none;
+}
+
+ul.pages li {
+    margin: 0 20px;
+}
+
+ul.pages li a {
+    font-weight: 600;
+} */
+
+.mainbanner {
+    background-image: url("https://david58.web582.com/block3/webproject1/img/texture.jpg");
+    background-size: cover;
+    background-position: center;
+    height: calc(100vh - 100px);
+    display: flex;
+    justify-content: center;
+}
+
+.fifty50 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.textbox {
+    color: white;
+}
+
+.btn {
+    background-color: #af3208;
+    color: #ffff;
+    padding: 15px 15px;
+    margin-top: 20px;
+    border-radius: 25px;
+}
+
+.img-right {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+.img-right img {
+    width: 100%;
+}
+
+.monster-drink img {
+    width: 50%;
+}
+
+.text-left {
+    width: 100%;
+}
+
+.drink {
+    color: white;
+    background: linear-gradient(0deg,
+            #180138 0%,
+            black 100%);
+}
+
+.drink-parent-flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: calc((100% - 80px) / 4);
+    border-radius: 15px;
+    align-items: center;
+    margin-top: 2em;
+}
+
+.card img {
+    width: 30%;
+}
+
+.card:hover {
+    border: #97cb3d 2px solid;
+}
+
+.middlebanner {
+    background-image: url("https://david58.web582.com/block3/webproject1/img/latest-bg.png");
+    background-position: center;
+    /* height: calc(100vh - 100px); */
+    display: flex;
+    justify-content: center;
+}
+
+.blog {
+    background: black;
+    padding: 50px 0;
+}
+
+.grid-container {
+    width: 90%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.grid-col {
+    /* width: 33.3%;
+    min-width: 300px; */
+    box-sizing: border-box;
+    padding-right: 20px;
+    margin-bottom: 20px;
+}
+
+.grid-col img {
+    width: 100%;
+    height: auto;
+    max-height: 250px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.body-content {
+    padding: 15px 30px 80px 40px;
+    position: relative;
+    border: 1px solid #97cb3d;
+    line-height: 23px;
+    color: #fff;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.round-btn {
+    position: absolute;
+    bottom: 25px;
+    left: 40px !important;
+    width: 45px;
+    height: 45px;
+    font-size: 22px;
+    line-height: 45px;
+    text-align: center;
+    background: #fff;
+    color: #97cb3d;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    -webkit-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+    -webkit-box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.2), 0 0 0 0 rgba(255, 255, 255, 0.0);
+    -moz-box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.2), 0 0 0 0 rgba(255, 255, 255, 0.0);
+    box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.2), 0 0 0 0 rgba(255, 255, 255, 0.0);
+}
+
+.round-btn:hover {
+    -webkit-box-shadow: 0 0 0 10px rgba(255, 255, 255, 0.2), 0 0 0 20px rgba(255, 255, 255, 0.12);
+    -moz-box-shadow: 0 0 0 10px rgba(255, 255, 255, 0.2), 0 0 0 20px rgba(255, 255, 255, 0.12);
+    box-shadow: 0 0 0 10px rgba(255, 255, 255, 0.2), 0 0 0 20px rgba(255, 255, 255, 0.12);
+}
+
+.email {
+    color: white;
+    background-color: black;
+}
+
+.emailtext {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    text-align: center;
+}
+
+.subscribe {
+    display: inline-flex;
+    gap: 1em;
+    margin-bottom: 1em;
+}
+
+input {
+    color: white;
+    background-color: black;
+    padding: 1.2em;
+    border-radius: 15px;
+    width: 500px;
+}
+
+.btn2 {
+    color: white;
+    background-color: #97cb3d;
+    border-radius: 15px;
+    padding: 15px 15px;
+}
+
+.btn2:hover {
+    cursor: pointer;
+}
+
+.blog h3 {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1em;
+    color: white;
+}
+
+.flex-social {
+    display: flex;
+    justify-content: center;
+    font-size: 2em;
+    padding-top: 1em;
+}
+
+footer {
+    background-color: black;
+    height: 210px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+footer p {
+    max-width: 100%;
+}
+
+/* single page css */
+.single-banner {
+    background-size: cover;
+    background-position: center;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+
+.title-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.single-blog {
+    background-color: black;
+    color: white;
+}
+
+.single-blog section {
+    padding: 10px 0;
+}
+
+.single-blog p {
+    max-width: 100%;
+}
+
+.single-blog img {
+    width: 100%;
+}
+
+.single-blog .btn {
+    display: flex;
+    justify-content: center;
+}
+
+.left-blog ul li {
+    border: 1px solid white;
+    border-radius: 15px;
+    padding: 4px 10px;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.left-blog ul {
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+}
+
+textarea {
+    background: black;
+    color: white;
+    width: 100%;
+}
+
+.wpcf7-submit {
+    background-color: #af3208;
+    color: #ffff;
+    padding: 15px 15px;
+    margin-top: 20px;
+    border-radius: 25px;
+    font-family: 'Tektur', cursive;
+    font-size: 1.1em;
+}
+
+/* index page */
+.indexpage {
+    color: white;
+    background-color: black;
+}
+
+.index-btn {
+    padding: 0px 8px;
+    border: white 2px solid;
+}
+
+@media screen and (max-width: 768px) {
+
+    .header-flex {
+        flex-direction: column;
+        height: 240px;
+        padding: 1em 0;
+    }
+
+    .logo {
+        margin-bottom: 20px;
+    }
+
+    #menu-monster-menu {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .shopbag {
+        display: flex;
+        align-items: center;
+    }
+
+    .mainbanner {
+        height: auto;
+        padding: 50px 0;
+    }
+
+    .fifty50 {
+        flex-direction: column;
+    }
+
+    .text-left {
+        margin-bottom: 20px;
+    }
+
+    .drink-parent-flex {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .smallgrid {
+        display: grid;
+        justify-items: center;
+    }
+
+    .card {
+        width: calc(50% - 20px);
+        margin-bottom: 20px;
+    }
+
+    .middlebanner {
+        height: auto;
+        padding: 50px 0;
+    }
+
+    .grid-container {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+
+    .body-content {
+        padding: 15px 20px 80px 30px;
+    }
+
+    .round-btn {
+        left: 30px !important;
+    }
+
+    .emailtext {
+        flex-wrap: wrap;
+    }
+
+    input {
+        max-width: 400px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    input {
+        width: 100%;
+    }
+
+    .grid-col {
+        width: 100%;
+    }
+
+    .single-banner {
+        height: 30vh;
+    }
+
+    footer {
+        height: 262px;
+    }
+}
